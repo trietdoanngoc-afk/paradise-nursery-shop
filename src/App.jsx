@@ -1,0 +1,86 @@
+/* Giao diện nền cho Landing Page */
+.landing-page {
+  background-image: url('https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=1200');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.landing-content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.get-started-btn, .add-to-cart-btn, .continue-btn, .checkout-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.get-started-btn:hover, .add-to-cart-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Kiểu dáng Navbar cơ bản */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  color: white;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-badge {
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 12px;
+}
+
+/* Grid sản phẩm */
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.plant-card, .cart-item-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.plant-img, .cart-item-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
